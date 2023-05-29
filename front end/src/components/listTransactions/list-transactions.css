@@ -1,0 +1,169 @@
+.list-transactions {
+  margin-left: 10px;
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-transactions .box-list-transactions {
+  padding: 24px;
+  border-radius: 24px;
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 80vh;
+  border: 1px solid var(--color-dimWhite);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  overflow-y: scroll;
+}
+
+.list-transactions .box-list-transactions .card-transaction {
+  border-radius: 24px;
+  padding: 14px;
+  background: var(--black-gradient);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.list-transactions .box-list-transactions .card-transaction .no-order {
+  color: #eaeaea;
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--color-dimWhite);
+  border-radius: 14px;
+  padding: 10px 10px;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .total-price,
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .paid {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--color-dimWhite);
+}
+
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .total-price
+  p,
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .paid
+  p {
+  font-size: 0.9rem;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .total-price
+  h3,
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-left
+  .paid
+  h3 {
+  font-size: 1.2rem;
+  padding: 3px;
+}
+
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right {
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--color-dimWhite);
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right
+  p {
+  font-size: 0.9rem;
+}
+
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right
+  .items {
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1rem;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right
+  .items
+  span {
+  font-size: 1.1rem;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right
+  .items
+  span:nth-child(2n-1) {
+  font-weight: 600;
+}
+.list-transactions
+  .box-list-transactions
+  .card-transaction
+  .detail-transaction
+  .detail-transaction-right
+  .items
+  span:nth-child(2n) {
+  border-left: 1px solid var(--color-dimWhite);
+  padding: 0 10px;
+}
